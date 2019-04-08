@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Twocode.pl-Strona Główna</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/start.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+
+
+<body class="bg-dark text-white">
+<!-- <p id='wynikk'></p>-->
+<div class="jumbotron jumbotron-fluid bg-dark">
+  <div class=" container text-center d-inline bg-dark menu-clas " data-main-tabs>
+    <div class="text-center text-middle-animation" data-text="MATEUSZ JARACZ"></div>
+    <ul class="list-inline">
+       <li class="list-inline-item"><button id="document-id">HTML</button></li>
+       <li class="list-inline-item"><button id="plik-id">STYLE</button>  </li>
+       <li class="list-inline-item "><button id="home">HOME</button></li>
+    </ul>
+  
+  </div>
+</div>
+
+<div class="container document-js" data-main-tab="document-id">
+  <h2 class="text-center mt-5 h2html">HTML</h2>
+  <h5 class="text-center mt=1">podstawowe polecenia </h5>
+
+
+<div class="container mt-5">
+  <ul>
+    <li>title -tytuł strony</li>
+    <li>head-sekcja w której umieszczamy meta,tytuł,odwołania do css,js(js najlepiej na dole body)</li>
+    <li>body-nasze ciało ,tutaj wykonujemy cały kod.</li>
+    <li>meta-element pozwalający dodać słowa kluczowe na naszą stronę</li>
+    <hr>
+    <li>p - paragraf - oznaczenie dłużej ilości tekstu ,zaczyna od nowej lini </li>
+    <li>h1-h6 - wielkość tekstu h1 największy h6 najmniejszy <br>
+      <h1>h1</h1><h2>h2</h2><h3>h3</h3><h4>h4</h4><h5>h5</h5><h6>h6</h6></li>
+    <li>br - przejscie do nowej lini </li>
+    <li>hr -pozioma linia oddzielająca </li>
+    <li> & nbsp;(razem) znak specjalny spacji niełamliwej</li>
+    <li> <! -- komentarz -- > </li>
+    <hr>
+    <li>formatowanie tekstu<br>
+    • <strong>strong-wyraz pogrubiony</strong> <br>
+        • <b> b- wyraz pogrubiony</b> <br>
+        • <em>em- wyraz pochylony</em>e<br>
+        • <i> i-wyraz pochylony</i><br>
+        • <small> small- wyraz pomniejszony</small><br>
+        • <mark>mark- podświetlony wyraz</mark><br>
+        • <sup>sup- indeks górny</sup><br>
+        • <sub>sub- indeks dolny</sub><br>
+        • <s>s- wyraz nieaktualny</s><br>
+        • <ins>ins- wyraz wstawiony</ins><br>
+        <del>del- wyraz usunięty</del><br>
+        </li>
+<hr>
+    <li>wypunktowanie -lista nieuporządkowana(cała ta strona jest na tej liście</li>
+    < ul ><br>
+        < li > tekst< /li ><br>
+        < li > tekst< /li><br>
+  < /ul ><br>
+<hr>
+    <li>wypunktowanie-lista uporządkowana <br> 
+    < ol > <br>
+        < li >tekst< /li><br>
+        < li >teskt< /li><br>
+    < /ol> <br>
+    domyślne numerowanie jest od 1.<br>
+    można je zmienić dodając do ol - typ <br>
+    < ol type = "nasz typ "><br>
+typy:<br>
+1-domyślny <br>
+I - wg. duzych cyfr rzymskich <br>
+i - wg. małych cygr rzymskich <br>
+a - wg. malych liter <br>
+A - wg. duzych liter 
+</li>
+<hr>
+<li>img - dodnie zdjęcia <br>
+  atrybuty:<br>
+  src = "miejsce zdjęcia lub url "<br>
+  alt = "test alternatywny"<br>
+  title = 'atrybut zdjecia - wyskakuje jak najedziemy na zdjecie'<br>
+
+</li>
+<li>a- odnośniki 
+  href=" adres url /lub miejsce pliku"<br>
+</li>
+
+<li>form- formularze</li>
+<form method="POST" action="index.html" >
+  <input type="text" name="imie" placeholder="imie"><br>
+  <input type="password" name="hasło" placeholder="hasło"><br>
+  <input type="tel"><br>
+  <input type="time"><br>
+< form methot = "post"  action=" index.html"><br>
+  < input  type = "text/password/tel/time..." name="" placeholder="to co się wyświetli pierwsze"<br>
+< / form ><br>
+</form>
+<li>button- tworzy nam buttona </li>
+  </ul>
+
+</div>
+</div>
+
+
+<div class="container text-center pliki-js" data-main-tab="plik-id">
+  <h2 class="h2html mt-5">STYLE</h2>
+  <h5 class="mt-1">podstawowe polecenia</h5>
+</div>
+
+
+<div class="container start-js bg-dark" data-main-tab="start-id">
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+
+
+
+
+<div class="container home-js" data-main-tab="home">
+
+  <form class="box text-center mt-5" action="index.html" method="post">
+  <h2>LOGIN</h2>
+  <input  type="text" name="" placeholder="Username">
+  <input  type="password" name="" placeholder="Password">
+  <input type="submit" name="" value="Login"> 
+</form>
+<ul class="list-inline text-center ">
+
+  <li class="list-inline-item" ><a href="https://www.linkedin.com/in/mateusz-jaracz-40b660174/"><img src="img/icons/linkedin.png"></a></li>
+  <li class="list-inline-item"><a href="#"><img src="img/icons/github.png"></a></li>
+  <li class="list-inline-item"><a href="http://twocode.pl"><img src="img/icons/twitter.png"></a></li>
+
+</ul>
+</div>
+
+  
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/documentplik.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

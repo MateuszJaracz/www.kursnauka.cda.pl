@@ -1,0 +1,253 @@
+
+.der{
+   // display: none;
+    border:1px solid red;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    display: none;
+}
+
+.das{
+    border:1px solid red;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    display: none;
+}
+.hot{
+    color:red;
+}
+
+.cool{
+    color:blue;
+}
+
+.nieWidać{
+    display: none;
+}
+
+.menu-clas{
+    width: 100%;
+    height: 400px;
+}
+
+.box{
+    width: 300px;
+    height: 300px ;
+    //padding: 40px; 
+    //position: absolute;
+    //transform:  translate(-50%,-50%);
+    background: none;
+
+    
+}
+.box h1{
+    color:white;
+    text-transform:  uppercase;
+    font-weight: 500;
+
+}
+.box input[type = "text"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display:block;
+    margin: 20px auto;
+    text-align:center;
+    border:2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition:  0.25s;
+}
+
+.box input[type="text"]:focus,.box input[type ="password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+
+}
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin :20px auto;
+    text-align:center;
+    border: 2px solid #2ecc71;
+    padding:14px 40px;
+   
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type="submit"]:hover{
+    background: #2ecc71;
+}
+
+
+#document-id,#plik-id,#home{
+    border:0;
+    background:none;
+    display:block;
+    margin: 20px auto;
+    text-align:center;
+    border:2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition:  0.25s;
+    filter: blur(1px);
+}
+#document-id:hover,#plik-id:hover,#home:hover{
+    opacity: 0.5;
+    transform: 0.3s;
+    color:#ff00c1;
+    font-weight: 500;
+    filter: blur(0px);
+    
+}
+
+#document-id:focus,#plik-id:focus,#home:focus{
+    border:0;
+    background:none;
+    display:block;
+    margin: 20px auto;
+    text-align:center;
+    border:2px solid #2ecc71;
+    padding: 14px 10px;
+    width: 280px;
+    outline: none;
+    color:white;
+    font-weight: 700;
+    border-radius: 24px;
+    transition:  0.25s;
+    animation-name:text-animation;
+        animation-duration:5s;
+        animation-iteration-count:infinite;
+}
+
+@keyframes text-animation
+{
+    0%{color:#2ecc71;}
+    20%{color:#3498db;}
+    40%{color:#2ecc71;}
+    60%{color:#3498db;}
+    80%{color:#2ecc71;}
+    100%{color:#3498db;}
+}
+
+
+.text-middle-animation{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 14px;
+    z-index: -1;
+}
+/*
+.text-middle-animation::before,::after{
+    content: attr(data-text);
+    width: 50%;
+    height: 100%;
+}
+*/
+.text-middle-animation::before{
+        content: attr(data-text);
+       // color:#ff00c1;
+   // animation: text-anime 3s; infinite;
+        animation-name:title-text;
+        animation-duration:10s;
+        animation-iteration-count:infinite;
+        font-size: 30px;
+}
+
+
+.text-middle-animation::after{
+    
+    //color:#3498db;
+    animation-name:title-text;
+        animation-duration:10s;
+        animation-iteration-count:infinite;
+}
+
+
+@keyframes title-text{
+    0%{
+       // left:-2px;
+      //  top:-2px;
+        color:white;
+        opacity: 0.2;
+        letter-spacing: 10px;
+        content:"style";
+        text-transform: uppercase;
+        
+        
+    }
+    25%{
+  //      left:2px;
+    //    top:0px;
+        color: #191919;
+        opacity: 0.7;
+        letter-spacing: 11px;
+        content:"mateusz jaracz";
+        text-transform: uppercase;
+    
+    }
+    50%{
+     //   left:-1px;
+     //   top:2px;
+        color: #3498db;
+        opacity: 0.1;
+        letter-spacing: 17px;
+        text-transform: uppercase;
+        
+    }
+    75%{
+      //  left:-1px;
+       // top:-1px;
+        color:#2ecc71;
+        opacity:0.7;
+        letter-spacing: 14px;
+        content: "html";
+        text-transform: uppercase;
+        
+    }
+    100%{
+       // left:30px;
+       // top:-20px;
+        color:#ff00c1;
+        letter-spacing: 10px;
+        opacity:0.3;
+        text-transform: uppercase;
+        
+    }
+
+    
+}
+
+.h2html{
+    animation-name:th2html2;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+      filter: blur(2px);  
+      color:linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+}
+
+@keyframes th2html2{
+    0%{
+        filter:blur(0px);
+        color:#3498db;
+        letter-spacing: 14px;
+        
+    }
+    50%{
+        filter:blur(100px);
+    }
+    100%{
+        filter:blur(0px);
+        color:#14ffe9;
+        letter-spacing: 14px;
+    }
+}

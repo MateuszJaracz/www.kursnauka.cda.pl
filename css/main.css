@@ -1,0 +1,334 @@
+@charset "UTF-8";
+.der {
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  position: relative;
+  display: none;
+}
+
+.das {
+  border: 1px solid red;
+  width: 500px;
+  height: 400px;
+  position: relative;
+  display: none;
+}
+
+.hot {
+  color: red;
+}
+
+.cool {
+  color: blue;
+}
+
+.nieWidać {
+  display: none;
+}
+
+.menu-clas {
+  width: 100%;
+  height: 400px;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background: none;
+}
+
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.box input[type="text"], .box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  color: white;
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+  background: #2ecc71;
+}
+
+#document-id, #plik-id, #home {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+#document-id:hover, #plik-id:hover, #home:hover {
+  opacity: 0.5;
+  -webkit-transform: 0.3s;
+          transform: 0.3s;
+  color: #ff00c1;
+  font-weight: 500;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+#document-id:focus, #plik-id:focus, #home:focus {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 10px;
+  width: 280px;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-animation-name: text-animation;
+          animation-name: text-animation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes text-animation {
+  0% {
+    color: #2ecc71;
+  }
+  20% {
+    color: #3498db;
+  }
+  40% {
+    color: #2ecc71;
+  }
+  60% {
+    color: #3498db;
+  }
+  80% {
+    color: #2ecc71;
+  }
+  100% {
+    color: #3498db;
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    color: #2ecc71;
+  }
+  20% {
+    color: #3498db;
+  }
+  40% {
+    color: #2ecc71;
+  }
+  60% {
+    color: #3498db;
+  }
+  80% {
+    color: #2ecc71;
+  }
+  100% {
+    color: #3498db;
+  }
+}
+
+.text-middle-animation {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 14px;
+  z-index: -1;
+}
+
+/*
+.text-middle-animation::before,::after{
+    content: attr(data-text);
+    width: 50%;
+    height: 100%;
+}
+*/
+.text-middle-animation::before {
+  content: attr(data-text);
+  -webkit-animation-name: title-text;
+          animation-name: title-text;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  font-size: 30px;
+}
+
+.text-middle-animation::after {
+  -webkit-animation-name: title-text;
+          animation-name: title-text;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes title-text {
+  0% {
+    color: white;
+    opacity: 0.2;
+    letter-spacing: 10px;
+    content: "style";
+    text-transform: uppercase;
+  }
+  25% {
+    color: #191919;
+    opacity: 0.7;
+    letter-spacing: 11px;
+    content: "mateusz jaracz";
+    text-transform: uppercase;
+  }
+  50% {
+    color: #3498db;
+    opacity: 0.1;
+    letter-spacing: 17px;
+    text-transform: uppercase;
+  }
+  75% {
+    color: #2ecc71;
+    opacity: 0.7;
+    letter-spacing: 14px;
+    content: "html";
+    text-transform: uppercase;
+  }
+  100% {
+    color: #ff00c1;
+    letter-spacing: 10px;
+    opacity: 0.3;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes title-text {
+  0% {
+    color: white;
+    opacity: 0.2;
+    letter-spacing: 10px;
+    content: "style";
+    text-transform: uppercase;
+  }
+  25% {
+    color: #191919;
+    opacity: 0.7;
+    letter-spacing: 11px;
+    content: "mateusz jaracz";
+    text-transform: uppercase;
+  }
+  50% {
+    color: #3498db;
+    opacity: 0.1;
+    letter-spacing: 17px;
+    text-transform: uppercase;
+  }
+  75% {
+    color: #2ecc71;
+    opacity: 0.7;
+    letter-spacing: 14px;
+    content: "html";
+    text-transform: uppercase;
+  }
+  100% {
+    color: #ff00c1;
+    letter-spacing: 10px;
+    opacity: 0.3;
+    text-transform: uppercase;
+  }
+}
+
+.h2html {
+  -webkit-animation-name: th2html2;
+          animation-name: th2html2;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  color: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+}
+
+@-webkit-keyframes th2html2 {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    color: #3498db;
+    letter-spacing: 14px;
+  }
+  50% {
+    -webkit-filter: blur(100px);
+            filter: blur(100px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    color: #14ffe9;
+    letter-spacing: 14px;
+  }
+}
+
+@keyframes th2html2 {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    color: #3498db;
+    letter-spacing: 14px;
+  }
+  50% {
+    -webkit-filter: blur(100px);
+            filter: blur(100px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    color: #14ffe9;
+    letter-spacing: 14px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
